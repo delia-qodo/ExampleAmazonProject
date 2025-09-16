@@ -1,129 +1,195 @@
-# CSV Data Analyzer
+# Amazon Seller Analytics Dashboard
 
-A modern web application for uploading, processing, and analyzing CSV files with interactive visualizations and comprehensive reporting features.
+A powerful web application designed specifically for Amazon sellers to analyze their product inventory, pricing competitiveness, and storage costs through CSV report uploads.
 
-## 🚀 Features
+## 🎯 Purpose
 
-- **Drag & Drop Upload**: Easy file upload with drag-and-drop or click-to-browse functionality
-- **Data Processing**: Automatic CSV parsing and data analysis
-- **Summary Statistics**: Quick overview of total rows, columns, and data points
-- **Data Preview**: Paginated table view of your CSV data
-- **Column Analysis**: Detailed analysis of each column including:
-  - Data type detection (numeric/text)
-  - Unique value counts
-  - Empty value detection
-  - Statistical measures (min, max, average for numeric columns)
-  - Most common values for text columns
-- **Interactive Visualizations**: Multiple chart types including:
-  - Bar charts
-  - Line charts
-  - Pie charts
-  - Doughnut charts
-- **Export Options**: Export your analysis as:
-  - JSON format
-  - HTML report
-  - Print-friendly version
+This dashboard helps Amazon sellers make data-driven decisions by:
+- Identifying products priced higher than competitors
+- Highlighting products with excessive storage costs
+- Analyzing inventory age and suggesting optimization strategies
+- Providing actionable insights to improve profitability
 
-## 🛠️ Technologies Used
+## 🚀 Key Features
 
-- **HTML5**: Structure and semantic markup
-- **CSS3**: Modern styling with responsive design
-- **JavaScript (ES6+)**: Application logic and data processing
-- **Chart.js**: Interactive data visualizations
-- **No backend required**: Fully client-side processing
+### Pricing Competitiveness Analysis
+- **Overpriced Product Detection**: Automatically identifies products priced above competitor prices
+- **Price Comparison Visualization**: Side-by-side bar charts comparing your prices with competitors
+- **Potential Revenue Loss Calculation**: Shows how much you might be losing due to overpricing
+- **Competitive Advantage Identification**: Highlights products priced below competition
+
+### Storage Cost Analysis
+- **High Storage Cost Detection**: Identifies products with storage costs above average
+- **Cost Distribution Visualization**: Visual breakdown of storage costs across your inventory
+- **Top Cost Contributors**: Highlights the products consuming most storage budget
+- **Storage Optimization Recommendations**: Suggests which products need inventory reduction
+
+### Key Alerts & Opportunities
+- **Real-time Alerts**: Instant notifications about critical issues
+- **Actionable Insights**: Specific recommendations for each identified issue
+- **Priority Classification**: Color-coded alerts (danger, warning, success, info)
+- **Aged Inventory Detection**: Identifies slow-moving products over 6 months old
+
+### Additional Features
+- **Data Preview**: Paginated table view with conditional formatting
+- **Column Analysis**: Automatic data type detection and statistical analysis
+- **Custom Visualizations**: Multiple chart types for different data perspectives
+- **Export Options**: JSON and HTML report generation
+- **Print-Ready Reports**: Formatted reports for offline review
+
+## 📊 Required CSV Format
+
+Your CSV file should include the following columns (case-insensitive):
+
+### Essential Columns:
+- **Product Name**: Name or title of the product
+- **Price**: Your current selling price
+- **Competitor Price**: Lowest competitor price or market price
+- **Storage Cost**: Monthly storage fees or FBA fees
+- **Listing Age (Days)**: How long the product has been listed
+
+### Optional Columns:
+- **SKU**: Product identifier
+- **Units in Stock**: Current inventory quantity
+- **Category**: Product category
+- **Sales Rank**: Amazon sales rank
+- **Monthly Sales**: Units sold per month
+
+## 🚦 Getting Started
+
+1. **Open the Application**
+   ```
+   Open index.html in any modern web browser
+   ```
+
+2. **Upload Your CSV**
+   - Drag and drop your Amazon seller report CSV
+   - Or click "Browse Files" to select
+   - Maximum file size: 10MB
+
+3. **Review Analysis**
+   - Check Key Alerts for immediate action items
+   - Review Pricing Competitiveness section
+   - Analyze Storage Cost breakdown
+   - Export reports for team sharing
 
 ## 📁 Project Structure
 
 ```
 ExampleAmazonProject/
-├── index.html          # Main HTML file
-├── styles.css          # Styling and responsive design
-├── app.js             # Application logic and CSV processing
-├── sample-data.csv    # Sample CSV file for testing
-└── README.md          # Project documentation
+├── index.html          # Main application interface
+├── styles.css          # Styling with alert-specific designs
+├── app.js             # Amazon seller analytics logic
+├── sample-data.csv    # Sample Amazon seller data
+└── README.md          # Documentation
 ```
 
-## 🚦 Getting Started
+## 💡 Use Cases
 
-1. **Clone or download the repository**
-2. **Open the application**:
-   - Simply open `index.html` in any modern web browser
-   - No server or installation required
+### For Amazon FBA Sellers
+- Optimize pricing strategy against competitors
+- Reduce long-term storage fees
+- Identify slow-moving inventory
+- Improve profit margins
 
-3. **Upload a CSV file**:
-   - Drag and drop a CSV file onto the upload area
-   - Or click "Browse Files" to select a file
-   - Maximum file size: 10MB
+### For Inventory Managers
+- Monitor storage cost trends
+- Plan inventory reduction sales
+- Identify products for removal
+- Optimize warehouse space
 
-4. **View the analysis**:
-   - Click "Process CSV" to generate the report
-   - Explore different sections of the analysis
-   - Change chart types and columns for visualization
-   - Export your report in various formats
+### For Pricing Analysts
+- Track competitive positioning
+- Identify pricing opportunities
+- Monitor market trends
+- Adjust pricing strategies
 
-## 📊 Sample Data
+## 🎨 Visual Indicators
 
-A sample CSV file (`sample-data.csv`) is included with Amazon product sales data for testing purposes.
+### Alert Types
+- 🔴 **Danger (Red)**: Critical issues requiring immediate attention
+- 🟡 **Warning (Yellow)**: Important issues to address soon
+- 🟢 **Success (Green)**: Positive indicators or opportunities
+- 🔵 **Info (Blue)**: General information and suggestions
 
-## 🎯 Use Cases
+### Table Highlighting
+- **Red Background**: Products priced above competitors
+- **Normal Background**: Competitively priced products
 
-- Sales data analysis
-- Product inventory tracking
-- Customer data insights
-- Financial reporting
-- Survey result analysis
-- Any tabular data analysis
+## 📈 Metrics Calculated
 
-## 🔒 Privacy & Security
+### Pricing Metrics
+- Number of overpriced products
+- Average price difference from competitors
+- Potential revenue loss
+- Competitive advantage percentage
 
-- All processing happens in your browser
-- No data is sent to any server
-- Your files remain completely private
-- No external dependencies or tracking
+### Storage Metrics
+- Total storage costs
+- Average storage cost per product
+- High-cost product identification
+- Storage cost distribution
+
+### Inventory Metrics
+- Product age analysis
+- Slow-moving inventory detection
+- Turnover recommendations
+
+## 🔒 Data Privacy
+
+- **100% Client-Side Processing**: All data analysis happens in your browser
+- **No Server Upload**: Your data never leaves your computer
+- **No External Dependencies**: No third-party data sharing
+- **Secure Processing**: Your competitive data remains confidential
 
 ## 📱 Browser Compatibility
 
-- Chrome (recommended)
-- Firefox
-- Safari
-- Edge
-- Any modern browser with JavaScript enabled
+- Chrome 90+ (recommended)
+- Firefox 88+
+- Safari 14+
+- Edge 90+
 
-## 🤝 Contributing
+## 🛠️ Technologies Used
 
-Feel free to fork this project and submit pull requests with improvements or bug fixes.
+- **HTML5**: Semantic structure
+- **CSS3**: Modern styling with gradients and animations
+- **JavaScript ES6+**: Advanced data processing
+- **Chart.js**: Interactive data visualizations
+- **No Backend Required**: Fully client-side application
+
+## 📝 Sample Data
+
+The included `sample-data.csv` contains example Amazon seller data with:
+- 20 products with realistic pricing
+- Competitor price comparisons
+- Storage cost variations
+- Different listing ages
+- Various product categories
+
+## 🚀 Quick Test
+
+1. Open `index.html` in your browser
+2. Upload the included `sample-data.csv`
+3. Review the automated analysis
+4. Explore different visualizations
+5. Export a sample report
+
+## 🤝 Support
+
+For Amazon sellers looking to:
+- Improve pricing competitiveness
+- Reduce storage costs
+- Optimize inventory management
+- Increase profitability
+
+This tool provides the insights you need to make informed decisions.
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+MIT License - Free to use and modify for your business needs.
 
-## 🎨 Features Showcase
+---
 
-### Upload Interface
-- Clean, intuitive design
-- Visual feedback for drag-and-drop
-- File validation
+**Built for Amazon Sellers, by Amazon Sellers** 📦
 
-### Data Analysis
-- Automatic data type detection
-- Statistical calculations
-- Pattern recognition
-
-### Visualizations
-- Dynamic chart generation
-- Multiple visualization types
-- Interactive legends and tooltips
-
-### Export Capabilities
-- Formatted reports
-- Data preservation
-- Multiple export formats
-
-## 🚀 Quick Start
-
-To test the application immediately:
-1. Open `index.html` in your browser
-2. Use the included `sample-data.csv` file
-3. Explore all features of the analyzer
-
-Enjoy analyzing your CSV data! 📈
+Optimize your Amazon business with data-driven insights!

@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSV Data Analyzer</title>
+    <title>Amazon Seller Analytics Dashboard</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>📊 CSV Data Analyzer</h1>
-            <p>Upload your CSV file to generate insights and visualizations</p>
+            <h1>📦 Amazon Seller Analytics Dashboard</h1>
+            <p>Upload your product report CSV to analyze pricing competitiveness and storage costs</p>
         </header>
 
         <main>
@@ -44,6 +44,30 @@
 
             <!-- Report Section -->
             <section id="reportSection" class="report-section hidden">
+                <!-- Key Alerts -->
+                <div class="report-card alert-card">
+                    <h2>⚠️ Key Alerts & Opportunities</h2>
+                    <div id="keyAlerts" class="alerts-container"></div>
+                </div>
+
+                <!-- Pricing Analysis -->
+                <div class="report-card">
+                    <h2>💰 Pricing Competitiveness Analysis</h2>
+                    <div id="pricingAnalysis" class="analysis-grid"></div>
+                    <div class="chart-container" style="margin-top: 20px;">
+                        <canvas id="pricingChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Storage Cost Analysis -->
+                <div class="report-card">
+                    <h2>📦 Storage Cost Analysis</h2>
+                    <div id="storageAnalysis" class="analysis-grid"></div>
+                    <div class="chart-container" style="margin-top: 20px;">
+                        <canvas id="storageChart"></canvas>
+                    </div>
+                </div>
+
                 <!-- Summary Statistics -->
                 <div class="report-card">
                     <h2>📈 Summary Statistics</h2>
@@ -104,7 +128,7 @@
         </main>
 
         <footer>
-            <p>CSV Data Analyzer © 2024 | Built with ❤️</p>
+            <p>Amazon Seller Analytics Dashboard © 2024 | Optimize Your Inventory & Pricing</p>
         </footer>
     </div>
 

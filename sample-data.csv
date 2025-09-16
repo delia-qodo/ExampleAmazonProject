@@ -1,21 +1,21 @@
-Product Name,Category,Price,Quantity,Revenue,Date,Region,Customer Rating
-Echo Dot,Smart Home,29.99,150,4498.50,2024-01-15,North America,4.5
-Fire TV Stick,Electronics,39.99,200,7998.00,2024-01-16,Europe,4.3
-Kindle Paperwhite,E-Readers,139.99,75,10499.25,2024-01-17,Asia,4.7
-Ring Doorbell,Security,99.99,100,9999.00,2024-01-18,North America,4.2
-Echo Show,Smart Home,84.99,50,4249.50,2024-01-19,Europe,4.4
-Fire Tablet,Electronics,49.99,125,6248.75,2024-01-20,Asia,4.1
-Alexa Voice Remote,Accessories,29.99,300,8997.00,2024-01-21,North America,4.0
-Smart Plug,Smart Home,24.99,250,6247.50,2024-01-22,Europe,4.3
-Kindle Oasis,E-Readers,249.99,30,7499.70,2024-01-23,Asia,4.8
-Echo Studio,Audio,199.99,40,7999.60,2024-01-24,North America,4.6
-Fire HD 10,Electronics,149.99,80,11999.20,2024-01-25,Europe,4.2
-Ring Alarm,Security,199.99,60,11999.40,2024-01-26,Asia,4.4
-Echo Buds,Audio,119.99,90,10799.10,2024-01-27,North America,4.1
-Kindle Scribe,E-Readers,339.99,25,8499.75,2024-01-28,Europe,4.5
-Fire TV Cube,Electronics,139.99,55,7699.45,2024-01-29,Asia,4.3
-Smart Thermostat,Smart Home,129.99,70,9099.30,2024-01-30,North America,4.4
-Echo Auto,Automotive,49.99,110,5498.90,2024-01-31,Europe,3.9
-Ring Floodlight Cam,Security,249.99,45,11249.55,2024-02-01,Asia,4.5
-Kindle Kids,E-Readers,109.99,65,7149.35,2024-02-02,North America,4.6
-Fire TV Soundbar,Audio,119.99,85,10199.15,2024-02-03,Europe,4.2
+Product Name,SKU,Price,Competitor Price,Listing Age (Days),Storage Cost,Units in Stock,Category,Sales Rank,Monthly Sales
+Echo Dot (4th Gen),ECHO-DOT-4,49.99,44.99,120,2.50,150,Smart Home,1250,450
+Fire TV Stick 4K,FIRE-TV-4K,54.99,49.99,90,1.75,200,Electronics,890,620
+Kindle Paperwhite Case,KINDLE-CASE-01,29.99,24.99,365,0.85,75,Accessories,15420,85
+Ring Video Doorbell,RING-VID-2020,99.99,109.99,180,4.25,100,Security,2100,220
+USB-C Charging Cable,USB-C-CABLE-3FT,12.99,9.99,45,0.35,500,Electronics,5600,1200
+Bluetooth Speaker,BT-SPEAKER-W,79.99,74.99,210,3.50,50,Audio,8900,95
+Wireless Mouse,MOUSE-WL-01,24.99,19.99,300,0.65,125,Computer Accessories,12000,180
+Phone Stand Holder,PHONE-STAND-ADJ,15.99,14.99,60,0.45,300,Accessories,6700,420
+Smart Light Bulb,SMART-BULB-RGB,34.99,39.99,150,1.20,250,Smart Home,4300,350
+Laptop Sleeve 13",LAPTOP-SLV-13,39.99,35.99,240,1.85,80,Computer Accessories,18500,65
+HDMI Cable 6ft,HDMI-CABLE-6,18.99,15.99,400,0.55,400,Electronics,3200,550
+Webcam 1080p,WEBCAM-HD-1080,69.99,64.99,30,2.95,60,Computer Accessories,7800,140
+Power Bank 10000mAh,PWR-BANK-10K,44.99,49.99,270,2.15,90,Electronics,9200,165
+Yoga Mat,YOGA-MAT-6MM,32.99,29.99,180,3.85,110,Sports & Outdoors,22000,75
+Water Bottle 32oz,WATER-BTL-32,22.99,24.99,90,1.95,200,Sports & Outdoors,14500,280
+Desk Organizer,DESK-ORG-BAMBOO,28.99,26.99,320,2.45,70,Office Supplies,25000,45
+Car Phone Mount,CAR-MOUNT-MAG,19.99,17.99,150,0.75,180,Automotive,11000,310
+Bluetooth Earbuds,BT-EARBUDS-V2,89.99,84.99,75,1.65,85,Audio,5400,195
+Kitchen Scale Digital,KITCHEN-SCALE-D,35.99,32.99,420,2.85,65,Home & Kitchen,19000,55
+LED Desk Lamp,LED-LAMP-DESK,45.99,48.99,200,3.15,95,Home & Kitchen,16000,88
